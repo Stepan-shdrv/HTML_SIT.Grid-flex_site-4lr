@@ -1,0 +1,136 @@
+
+h1{
+text-align: center;
+}
+.content{
+border: solid ;
+}
+.picture_menu{
+background-image:url("soar.jpg");
+background-repeat:  no-repeat;
+}
+
+.picture_menu .Slogan{
+color: white;
+text-align: center;
+font-size: 1.8em; 
+}
+
+.Menu_grid{ 
+margin-top: 10%;
+display:  grid; 
+grid-template-columns: repeat(3,20%);
+
+justify-content: center;
+} 
+
+a{
+color: white;
+text-decoration:  none;
+}
+
+.block_menu:first-child{
+background: red;
+}
+
+.Menu_grid > .block_menu{
+font-size: 1.8em; 
+border: solid grey;
+padding: 5px; 
+margin: 5px;
+}
+
+
+img:nth-child(even){
+width:  100%;
+}
+.menu{
+display: inline-block;
+background: grey;
+width: 99%;
+padding: 0.5%;
+font-size: 1.8em;
+}
+.item{
+display: inline-block;
+margin-right: 1%;
+background: white;
+width: 70%;
+}
+
+.grid-container{ 
+display:  grid; 
+grid-template-columns: 48% 48%;
+
+justify-content: space-evenly;
+} 
+ 
+.grid-container > .block{ 
+border: solid grey;
+padding: 5px; 
+margin: 5px;
+}
+.grid-container img{
+
+float: left; 
+width: 40%;
+height: 200px;
+}
+.grid-container h3{
+height: 120px;
+font-size: 2.5em;
+display: flex;
+justify-content: center;
+
+}
+.grid-container p{
+padding: 5px; 
+font-size: 1.2em;
+}
+
+.end{
+font-size: 1.2em;
+display: inline-block;
+width:  99.8%;
+border:  solid 2px;
+border-top:  solid 0px;
+}
+.line{
+font-size: 1.2em;
+padding-top:  1%;
+float:  left;
+margin-right:  2%;
+text-align:  right;
+}
+
+.contacts{
+font-size: 1.2em;
+padding-top:  1%;
+float:  right;
+text-align:  right;
+}
+
+@media(max-width: 1000px){
+
+
+.grid-container{ 
+grid-template-columns: 90%;
+}
+
+.picture_menu .Slogan{
+display: none
+}
+ 
+.Menu_grid{
+margin-top: 0; 
+grid-template-columns: repeat(2,20%);
+}
+.picture_menu{
+background-image:url("");
+
+}
+a{
+color: black;
+}
+
+}
